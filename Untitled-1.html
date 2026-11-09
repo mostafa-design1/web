@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mostafa Design | Creative Branding, Web & AI Studio</title>
+<meta name="description" content="Mostafa Design - Creative logos, visual identities, advertisements, websites and AI videos that make brands unforgettable." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-black text-white">
+
+<header class="fixed top-0 left-0 w-full z-50 px-6 py-4 flex items-center justify-between bg-black/80 backdrop-blur-md" style="border-bottom:1px solid rgba(255,255,255,.1)">
+<a href="#home" onclick="goToSection(0);return false;" class="text-xl font-extrabold tracking-wider text-white flex items-center gap-1.5"><span>MOSTAFA</span><span class="text-[#ff1e1e]">DESIGN</span></a>
+<nav class="hidden lg:flex items-center gap-6 text-sm font-medium text-neutral-300" id="desktop-nav"></nav>
+<div class="flex items-center gap-3">
+<button onclick="toggleCubeMode()" id="cube-toggle-btn" class="px-3 py-1.5 rounded-lg bg-white/5 text-xs font-medium">3D Cube</button>
+<button onclick="toggleLanguage()" id="lang-btn" class="px-3 py-1.5 rounded-lg bg-white/5 text-xs font-semibold">EN</button>
+<button onclick="openWhatsApp('مرحباً مصطفى ديزاين، أود بدء مشروعي معك.')" class="px-4 py-2 text-xs font-bold text-white bg-[#25D366] rounded-full">واتساب</button>
+</div>
+</header>
+
+<main class="cube-viewport" id="viewport"><div class="cube-wrapper" id="cube-wrapper">
+
+<!-- HERO -->
+<section id="section-0" class="cube-section active" role="region" aria-label="الرئيسية">
+       <video class="hero-video" autoplay muted loop playsinline preload="metadata"
+             poster="assets/hero-poster.jpg" aria-hidden="true">
+        <source src="radio.mp4" type="video/mp4">
+      </video>
+       <div class="hero-shade" aria-hidden="true"></div>
+<div class="relative w-full min-h-[100svh] flex items-center px-6 py-20">
+<div class="w-full max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7 flex flex-col items-start text-right">
+<div class="px-3.5 py-1.5 rounded-full bg-white/5 text-xs font-semibold text-neutral-300" style="margin-bottom:24px"><span data-i18n="heroBadge">مصطفى ديزاين • استوديو الهويات والمحتوى الإبداعي</span></div>
+<h1 class="text-3xl sm:text-5xl md:text-6xl font-extrabold leading-[1.15] text-white" style="min-height:140px"><span style="display:block"><span id="typing-line-1"></span><span class="typing-caret"></span></span><span style="display:block;margin-top:4px;color:#ff1e1e"><span id="typing-line-2"></span></span></h1>
+<p data-i18n="heroDesc" class="text-base text-neutral-300 leading-relaxed" style="margin-top:24px;max-width:34rem">نصمم شعارات، هويات بصرية، إعلانات جذابة ومواقع احترافية تدفع الجمهور للتوقف والمشاهدة وتخليد علامتك التجارية في الذاكرة.</p>
+<div class="flex flex-wrap gap-4" style="margin-top:32px">
+<button onclick="openWhatsApp('مرحباً مصطفى ديزاين، أود طلب استشارة لبدء مشروعي.')" class="px-7 py-3.5 rounded-full bg-[#25D366] font-extrabold text-sm"><span data-i18n="heroCtaWhatsapp">اطلب عبر واتساب (01033575890)</span></button>
+<button onclick="goToSection(5)" class="px-6 py-3.5 rounded-full bg-white/5 font-semibold text-sm"><span data-i18n="heroCtaWatch">شاهد أعمالنا</span></button>
+</div></div>
+<div class="lg:col-span-5 flex justify-center"><div class="relative w-full max-w-[380px] aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl animate-float-image" style="border:1px solid rgba(255,255,255,.15)">
+<img src="file.webp" alt="أعمال مصطفى ديزاين" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+<div style="position:absolute;inset:0;background:linear-gradient(to top,#000,transparent)"></div>
+<div style="position:absolute;bottom:0;left:0;right:0;padding:24px;text-align:center"><div style="width:64px;height:64px;margin:0 auto 12px;border-radius:16px;background:#ff1e1e;display:flex;align-items:center;justify-content:center;font-size:24px;font-weight:900">M</div><h3 style="margin:0">Mostafa Design Studio</h3><p style="font-size:12px;color:#d4d4d4">Branding, Web Development & AI Visuals</p></div>
+</div></div>
+</div></div>
+</section>
+
+<!-- 1 LOGOS -->
+<section id="section-1" class="cube-section below" role="region" aria-label="الشعارات">
+<div class="max-w-7xl mx-auto w-full px-6 py-24 text-center">
+<h2 data-i18n="logosTitle" class="text-3xl sm:text-5xl font-extrabold" style="margin-bottom:12px">شعاراتنا الإبداعية</h2>
+
+<div class="carousel" data-carousel><div class="carousel-viewport"><div class="carousel-track">
+<div class="carousel-slide"><img src="logo1.png" alt="شعار 1" loading="lazy"><div class="carousel-caption"><h3>Apex Tech</h3><p>هوية تقنية</p></div></div>
+<div class="carousel-slide"><img src="logo2.jpg" alt="شعار 2" loading="lazy"><div class="carousel-caption"><h3>Brew & Co</h3><p>شعار كافيه</p></div></div>
+<div class="carousel-slide"><img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=900&auto=format&fit=crop" alt="شعار 3" loading="lazy"><div class="carousel-caption"><h3>Vanguard</h3><p>شعار عقاري</p></div></div>
+<div class="carousel-slide"><img src="https://images.unsplash.com/photo-1634942537034-2531766767d1?q=80&w=900&auto=format&fit=crop" alt="شعار 4" loading="lazy"><div class="carousel-caption"><h3>Logo 04</h3><p>مينيمال</p></div></div>
+<div class="carousel-slide"><img src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?q=80&w=900&auto=format&fit=crop" alt="شعار 5" loading="lazy"><div class="carousel-caption"><h3>Logo 05</h3><p>ملون جريء</p></div></div>
+<div class="carousel-slide"><img src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?q=80&w=900&auto=format&fit=crop" alt="شعار 6" loading="lazy"><div class="carousel-caption"><h3>Logo 06</h3><p>سوشيال</p></div></div>
+<div class="carousel-slide"><img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=900&auto=format&fit=crop" alt="شعار 7" loading="lazy"><div class="carousel-caption"><h3>Logo 07</h3><p>إبداعي</p></div></div>
+<div class="carousel-slide"><img src="https://images.unsplash.com/photo-1572044162444-ad60f128bdea?q=80&w=900&auto=format&fit=crop" alt="شعار 8" loading="lazy"><div class="carousel-caption"><h3>Logo 08</h3><p>خطي</p></div></div>
+<div class="carousel-slide"><img src="https://images.unsplash.com/photo-1609921212029-bb5a3e609d1e?q=80&w=900&auto=format&fit=crop" alt="شعار 9" loading="lazy"><div class="carousel-caption"><h3>Logo 09</h3><p>براند</p></div></div>
+<div class="carousel-slide"><img src="https://images.unsplash.com/photo-1626785774625-ddcddc3445e9?q=80&w=900&auto=format&fit=crop" alt="شعار 10" loading="lazy"><div class="carousel-caption"><h3>Logo 10</h3><p>نهائي</p></div></div>
+</div></div><button class="carousel-btn carousel-prev" data-prev aria-label="السابق">‹</button><button class="carousel-btn carousel-next" data-next aria-label="التالي">›</button><div class="carousel-dots" data-dots></div><div class="carousel-counter"><span data-current>1-3</span> / 10</div></div>
+</div></section>
+
+<!-- 2 IDENTITIES -->
+<section id="section-2" class="cube-section below" role="region" aria-label="الهويات">
+<div class="max-w-7xl mx-auto w-full px-6 py-24 text-center">
+<h2 data-i18n="identitiesTitle" class="text-3xl sm:text-5xl font-extrabold" style="margin-bottom:12px">الهويات البصرية المتكاملة</h2>
+
+<div class="carousel" data-carousel><div class="carousel-viewport"><div class="carousel-track">
+<div class="carousel-slide"><img src="https://images.unsplash.com/photo-1445205170230-053b83016050?q=80&w=900&auto=format&fit=crop" alt="هوية 1" loading="lazy"><div class="carousel-caption"><h3>Lumina Fashion</h3><p>أزياء فاخرة</p></div></div>
+<div class="carousel-slide"><img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=900&auto=format&fit=crop" alt="هوية 2" loading="lazy"><div class="carousel-caption"><h3>Aura Medical</h3><p>طبية</p></div></div>
+<div class="carousel-slide"><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=900&auto=format&fit=crop" alt="هوية 3" loading="lazy"><div class="carousel-caption"><h3>Noir Restaurant</h3><p>مطعم راقي</p></div></div>
+<div class="carousel-slide"><img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?q=80&w=900&auto=format&fit=crop" alt="هوية 4" loading="lazy"><div class="carousel-caption"><h3>Identity 04</h3><p>مكتب</p></div></div>
+<div class="carousel-slide"><img src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=900&auto=format&fit=crop" alt="هوية 5" loading="lazy"><div class="carousel-caption"><h3>Identity 05</h3><p>شركة</p></div></div>
+<div class="carousel-slide"><img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=900&auto=format&fit=crop" alt="هوية 6" loading="lazy"><div class="carousel-caption"><h3>Identity 06</h3><p>أثاث</p></div></div>
+<div class="carousel-slide"><img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=900&auto=format&fit=crop" alt="هوية 7" loading="lazy"><div class="carousel-caption"><h3>Identity 07</h3><p>متجر</p></div></div>
+<div class="carousel-slide"><img src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?q=80&w=900&auto=format&fit=crop" alt="هوية 8" loading="lazy"><div class="carousel-caption"><h3>Identity 08</h3><p>ديزاين</p></div></div>
+<div class="carousel-slide"><img src="https://images.unsplash.com/photo-1557682250-33bd709cbe85?q=80&w=900&auto=format&fit=crop" alt="هوية 9" loading="lazy"><div class="carousel-caption"><h3>Identity 09</h3><p>ألوان</p></div></div>
+<div class="carousel-slide"><img src="https://images.unsplash.com/photo-1558655146-d09347e92766?q=80&w=900&auto=format&fit=crop" alt="هوية 10" loading="lazy"><div class="carousel-caption"><h3>Identity 10</h3><p>براند كامل</p></div></div>
+</div></div><button class="carousel-btn carousel-prev" data-prev aria-label="السابق">‹</button><button class="carousel-btn carousel-next" data-next aria-label="التالي">›</button><div class="carousel-dots" data-dots></div><div class="carousel-counter"><span data-current>1-3</span> / 10</div></div>
+</div></section>
+
+
+<!-- 3 ADS - متصلح -->
+<section id="section-3" class="cube-section below" role="region" aria-label="الإعلانات">
+<div class="max-w-7xl mx-auto w-full px-6 py-24 text-center">
+<h2 data-i18n="adsTitle" class="text-3xl sm:text-5xl font-extrabold" style="margin-bottom:12px">إعلانات تحقق مبيعات حقيقية</h2>
+<p class="text-neutral-400" style="margin-bottom:28px">3 جنب بعض - دوس تشغيل على أي إعلان</p>
+
+<div class="carousel" data-carousel>
+<div class="carousel-viewport"><div class="carousel-track">
+
+<!-- إعلان 1 -->
+<div class="carousel-slide">
+<video controls muted playsinline autoplay preload="metadata" src="اعلان%20خلطه%20بانيه.mp4" aria-label="إعلان خلطة بانيه" style="width:100%;height:220px;object-fit:cover;display:block;background:#000"></video>
+<div class="carousel-caption"><h3>خلطة بانيه</h3><p>إعلان مطعم</p></div>
+</div>
+
+<!-- إعلان 2 -->
+<div class="carousel-slide">
+<video controls muted playsinline autoplay preload="metadata" src="اعلان%20كبابجي.mp4" aria-label="إعلان كبابجي" style="width:100%;height:220px;object-fit:cover;display:block;background:#000"></video>
+<div class="carousel-caption"><h3>كبابجي</h3><p>إعلان مشويات</p></div>
+</div>
+
+<!-- إعلان 3 -->
+<div class="carousel-slide">
+<video controls muted playsinline autoplay preload="metadata" src="اعلان%20كوكاكولا.mp4" aria-label="إعلان كوكاكولا" style="width:100%;height:220px;object-fit:cover;display:block;background:#000"></video>
+<div class="carousel-caption"><h3>كوكاكولا</h3><p>إعلان منتج</p></div>
+</div>
+
+<!-- إعلان 4 -->
+<div class="carousel-slide">
+<video controls muted playsinline autoplay preload="metadata" src="اعلان%20مطعم%20بيتزا.mp4" aria-label="إعلان مطعم بيتزا" style="width:100%;height:220px;object-fit:cover;display:block;background:#000"></video>
+<div class="carousel-caption"><h3>مطعم بيتزا</h3><p>إعلان مطعم</p></div>
+</div>
+
+<!-- إعلان 5 -->
+<div class="carousel-slide">
+<video controls muted playsinline autoplay preload="metadata" src="اعلان%20مطعم%20مشويات.mp4" aria-label="إعلان مطعم مشويات" style="width:100%;height:220px;object-fit:cover;display:block;background:#000"></video>
+<div class="carousel-caption"><h3>مطعم مشويات</h3><p>إعلان مشويات</p></div>
+</div>
+
+<!-- إعلان 6 -->
+<div class="carousel-slide">
+<video controls muted playsinline autoplay preload="metadata" src="طحينه%20الضياء.mp4" aria-label="إعلان طحينة الضياء" style="width:100%;height:220px;object-fit:cover;display:block;background:#000"></video>
+<div class="carousel-caption"><h3>طحينة الضياء</h3><p>إعلان منتج</p></div>
+</div>
+
+</div></div>
+<button class="carousel-btn carousel-prev" data-prev aria-label="السابق">‹</button>
+<button class="carousel-btn carousel-next" data-next aria-label="التالي">›</button>
+<div class="carousel-dots" data-dots></div>
+<div class="carousel-counter"><span data-current>1-3</span> / 6</div>
+</div>
+</div>
+</section>
+
+<!-- 4 WEBSITES - 3 سكرين شوت وتقدر تسكرول جواهم -->
+<section id="section-4" class="cube-section below" role="region" aria-label="المواقع">
+<div class="max-w-7xl mx-auto w-full px-6 py-24 text-center">
+<h2 data-i18n="websitesTitle" class="text-3xl sm:text-5xl font-extrabold" style="margin-bottom:12px">مواقعنا الإلكترونية</h2>
+<p class="text-neutral-400" style="margin-bottom:28px">اسكرول جوه الصورة عشان تشوف الموقع كله 👇</p>
+
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;text-align:right">
+  
+  <!-- موقع 1 - Ma'an Academy -->
+  <article class="bg-neutral-900 rounded-2xl overflow-hidden" style="border:1px solid rgba(255,255,255,.1)">
+    <!-- شريط المتصفح -->
+    <div style="background:#111;padding:10px 12px;display:flex;align-items:center;gap:8px;direction:ltr">
+      <span style="display:flex;gap:5px"><i style="width:10px;height:10px;background:#ff5f57;border-radius:50%;display:block"></i><i style="width:10px;height:10px;background:#febc2e;border-radius:50%;display:block"></i><i style="width:10px;height:10px;background:#28c840;border-radius:50%;display:block"></i></span>
+      <span style="flex:1;background:#222;padding:5px 10px;border-radius:999px;font-size:11px;color:#aaa;text-align:left">maanacademy.org</span>
+    </div>
+    <!-- الصورة اللي بتتسكرول -->
+    <div class="screenshot-scroll" style="height:380px;overflow-y:auto;overflow-x:hidden;cursor:grab;background:#fff;scrollbar-width:thin">
+      <img src="maan-academy-01.png" alt="سكرين شوت موقع Ma'an Academy كامل" loading="lazy" style="width:100%;display:block">
+    </div>
+    <div style="padding:16px">
+      <h3 style="margin:0;font-size:19px">Ma'an Academy</h3>
+      <p style="margin:6px 0 0;color:#a3a3a3;font-size:13px">موقع أكاديمية - عربي، مونتيسوري، قرآن</p>
+      <button onclick="openWhatsApp('عايز موقع زي Ma\'an Academy')" style="width:100%;margin-top:14px;background:#25D366;color:#fff;padding:11px;border-radius:10px;font-weight:800">اطلب موقع زي ده</button>
+    </div>
+  </article>
+
+  <!-- موقع 2 - Vogue -->
+  <article class="bg-neutral-900 rounded-2xl overflow-hidden" style="border:1px solid rgba(255,255,255,.1)">
+    <div style="background:#111;padding:10px 12px;display:flex;align-items:center;gap:8px;direction:ltr">
+      <span style="display:flex;gap:5px"><i style="width:10px;height:10px;background:#ff5f57;border-radius:50%;display:block"></i><i style="width:10px;height:10px;background:#febc2e;border-radius:50%;display:block"></i><i style="width:10px;height:10px;background:#28c840;border-radius:50%;display:block"></i></span>
+      <span style="flex:1;background:#222;padding:5px 10px;border-radius:999px;font-size:11px;color:#aaa;text-align:left">vogue-store.com</span>
+    </div>
+    <div class="screenshot-scroll" style="height:380px;overflow-y:auto;overflow-x:hidden;cursor:grab;background:#fff">
+      <img src="800w-o6Uuz0iciD0.webp" alt="سكرين شوت متجر Vogue" loading="lazy" style="width:100%;display:block">
+    </div>
+    <div style="padding:16px">
+      <h3 style="margin:0;font-size:19px">Vogue Store</h3>
+      <p style="margin:6px 0 0;color:#a3a3a3;font-size:13px">متجر إلكتروني - سلة وبحث ودفع سريع</p>
+      <button onclick="openWhatsApp('عايز متجر زي Vogue Store')" style="width:100%;margin-top:14px;background:#25D366;color:#fff;padding:11px;border-radius:10px;font-weight:800">اطلب موقع زي ده</button>
+    </div>
+  </article>
+
+  <!-- موقع 3 - Skillify -->
+  <article class="bg-neutral-900 rounded-2xl overflow-hidden" style="border:1px solid rgba(255,255,255,.1)">
+    <div style="background:#111;padding:10px 12px;display:flex;align-items:center;gap:8px;direction:ltr">
+      <span style="display:flex;gap:5px"><i style="width:10px;height:10px;background:#ff5f57;border-radius:50%;display:block"></i><i style="width:10px;height:10px;background:#febc2e;border-radius:50%;display:block"></i><i style="width:10px;height:10px;background:#28c840;border-radius:50%;display:block"></i></span>
+      <span style="flex:1;background:#222;padding:5px 10px;border-radius:999px;font-size:11px;color:#aaa;text-align:left">skillify-academy.com</span>
+    </div>
+    <div class="screenshot-scroll" style="height:380px;overflow-y:auto;overflow-x:hidden;cursor:grab;background:#fff">
+      <img src="400w-eMeNVS4yp_8.webp" alt="سكرين شوت منصة Skillify" loading="lazy" style="width:100%;display:block">
+    </div>
+    <div style="padding:16px">
+      <h3 style="margin:0;font-size:19px">Skillify Academy</h3>
+      <p style="margin:6px 0 0;color:#a3a3a3;font-size:13px">منصة كورسات - فيديوهات وشهادات</p>
+      <button onclick="openWhatsApp('عايز منصة زي Skillify')" style="width:100%;margin-top:14px;background:#25D366;color:#fff;padding:11px;border-radius:10px;font-weight:800">اطلب موقع زي ده</button>
+    </div>
+  </article>
+
+</div>
+</div>
+</section>
+
+
+<!-- 5 VIDEOS - متصلحة -->
+<section id="section-5" class="cube-section below" role="region" aria-label="فيديوهات AI">
+<div class="max-w-7xl mx-auto w-full px-6 py-24 text-center">
+<h2 data-i18n="videosTitle" class="text-3xl sm:text-5xl font-extrabold" style="margin-bottom:12px">فيديوهات الذكاء الاصطناعي</h2>
+<p class="text-neutral-400" style="margin-bottom:28px">3 جنب بعض - دوس تشغيل على أي إعلان</p>
+
+<div class="carousel" data-carousel>
+<div class="carousel-viewport"><div class="carousel-track">
+
+<!-- 1 -->
+<div class="carousel-slide">
+<video controls muted playsinline autoplay preload="metadata" src="1017.mp4" aria-label="فيديو لشخص" style="width:100%;height:220px;object-fit:cover;display:block;background:#000"></video>
+<div class="carousel-caption"><h3>مناسب للسوشيال ميديا</h3><p>فيديو لشخص</p></div>
+</div>
+
+<!--  2 -->
+<div class="carousel-slide">
+<video controls muted playsinline autoplay preload="metadata" src="2.mp4" aria-label="تحريك كرتوني" style="width:100%;height:220px;object-fit:cover;display:block;background:#000"></video>
+<div class="carousel-caption"><h3>لإنشاء الافلام الكرتونيه</h3><p>تحريك كرتوني</p></div>
+</div>
+
+<!-- إعلان 3 -->
+<div class="carousel-slide">
+<video controls muted playsinline autoplay preload="metadata" src="5.mp4" aria-label="فيديوهات تاريخيه" style="width:100%;height:220px;object-fit:cover;display:block;background:#000"></video>
+<div class="carousel-caption"><h3>كرتون تعليمي</h3><p>فيديوهات تاريخيه</p></div>
+</div>
+
+<!-- إعلان 4 -->
+<div class="carousel-slide">
+<video controls muted playsinline autoplay preload="metadata" src="7.mp4" aria-label="السفر عبر الزمن" style="width:100%;height:220px;object-fit:cover;display:block;background:#000"></video>
+<div class="carousel-caption"><h3>فيديوهات ترفيهيه</h3><p>السفر عبر الزمن</p></div>
+</div>
+
+<!-- إعلان 5 -->
+<div class="carousel-slide">
+<video controls muted playsinline autoplay preload="metadata" src="اعلان%20مطعم%20مشويات.mp4" aria-label="إعلان مطعم مشويات" style="width:100%;height:220px;object-fit:cover;display:block;background:#000"></video>
+<div class="carousel-caption"><h3>مطعم مشويات</h3><p>إعلان مشويات</p></div>
+</div>
+
+<!-- إعلان 6 -->
+<div class="carousel-slide">
+<video controls muted playsinline autoplay preload="metadata" src="طحينه%20الضياء.mp4" aria-label="إعلان طحينة الضياء" style="width:100%;height:220px;object-fit:cover;display:block;background:#000"></video>
+<div class="carousel-caption"><h3>طحينة الضياء</h3><p>إعلان منتج</p></div>
+</div>
+
+</div></div>
+<button class="carousel-btn carousel-prev" data-prev aria-label="السابق">‹</button>
+<button class="carousel-btn carousel-next" data-next aria-label="التالي">›</button>
+<div class="carousel-dots" data-dots></div>
+<div class="carousel-counter"><span data-current>1-3</span> / 6</div>
+</div>
+</div></section>
+
+<!-- 6 ABOUT -->
+<section id="section-6" class="cube-section below" role="region" aria-label="عن مصطفى">
+<div class="max-w-5xl mx-auto w-full px-6 text-center py-24">
+<h2 data-i18n="aboutTitle" class="text-3xl sm:text-5xl font-extrabold" style="margin-bottom:16px">عن مصطفى ديزاين</h2>
+<p data-i18n="aboutDesc" class="text-neutral-300 text-lg leading-relaxed" style="margin-bottom:48px">أساعد العلامات التجارية على الظهور بمستوى عالمي والنمو بشكل أسرع من خلال التصميم المتقن والمواقع الحديثة وفيديوهات الذكاء الاصطناعي.</p>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+<div class="bg-neutral-900 p-6 rounded-2xl" style="border:1px solid rgba(255,255,255,.1)"><span class="text-3xl font-bold text-[#ff1e1e]">250+</span><p data-i18n="stat1" class="text-xs text-neutral-400" style="margin-top:4px">مشروع منجز</p></div>
+<div class="bg-neutral-900 p-6 rounded-2xl" style="border:1px solid rgba(255,255,255,.1)"><span class="text-3xl font-bold text-[#0055ff]">180+</span><p data-i18n="stat2" class="text-xs text-neutral-400" style="margin-top:4px">عميل سعيد</p></div>
+<div class="bg-neutral-900 p-6 rounded-2xl" style="border:1px solid rgba(255,255,255,.1)"><span class="text-3xl font-bold text-[#ff1e1e]">229K+</span><p data-i18n="stat3" class="text-xs text-neutral-400" style="margin-top:4px">مشاهدة فيروسية</p></div>
+<div class="bg-neutral-900 p-6 rounded-2xl" style="border:1px solid rgba(255,255,255,.1)"><span class="text-3xl font-bold text-[#0055ff]">98%</span><p data-i18n="stat4" class="text-xs text-neutral-400" style="margin-top:4px">نسبة رضا العملاء</p></div>
+</div></div>
+</section>
+
+<!-- 7 CONTACT -->
+<section id="section-7" class="cube-section below" role="region" aria-label="تواصل">
+<div class="max-w-xl mx-auto w-full px-6 py-24 text-center">
+<h2 data-i18n="contactTitle" class="text-3xl sm:text-5xl font-extrabold" style="margin-bottom:16px">لنبدأ العمل سوياً</h2>
+<p data-i18n="contactDesc" class="text-neutral-400" style="margin-bottom:32px">أخبرني عن فكرة مشروعك وسأرد عليك فوراً على واتساب.</p>
+<form onsubmit="handleContactSubmit(event)" class="bg-neutral-900 p-6 rounded-2xl text-right flex flex-col gap-4" style="border:1px solid rgba(255,255,255,.1)">
+<input type="text" id="contact-name" placeholder="اسمك الكريم" required>
+<input type="email" id="contact-email" placeholder="بريدك الإلكتروني (اختياري)">
+<textarea id="contact-msg" rows="4" placeholder="تفاصيل فكرة المشروع..." required style="resize:none"></textarea>
+<p id="form-success" style="display:none;color:#25D366;font-weight:700;font-size:14px">✅ تم حفظ طلبك، هنفتح واتساب دلوقتي...</p>
+<button type="submit" class="w-full py-3.5 bg-[#25D366] font-bold rounded-xl" style="padding:14px"><span data-i18n="sendBtn">إرسال مباشرة إلى واتساب</span></button>
+</form></div>
+</section>
+
+</div></main>
+
+<nav class="fixed bottom-6 left-1/2 z-40 flex items-center gap-3 p-2 rounded-full bg-black/80" style="transform:translateX(-50%);border:1px solid rgba(255,255,255,.15)">
+<button onclick="goToSection(currentSection-1)" aria-label="السابق" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center">▲</button>
+<div id="pagination-dots" class="flex items-center gap-2 px-2"></div>
+<button onclick="goToSection(currentSection+1)" aria-label="التالي" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center">▼</button>
+</nav>
+
+
+<script src="script.js"></script>
+</body>
+</html>
